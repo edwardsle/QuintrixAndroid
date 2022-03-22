@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SimpleTable</string>
+    <string name="uid_edit">UID</string>
+    <string name="firstname_edit">First Name</string>
+    <string name="lastname_edit">Last Name</string>
+    <string name="rewards_edit">Rewards</string>
+    <string name="add_btn">ADD</string>
+    <string name="display_info_btn">Display Info</string>
+    <string name="delete_btn">Delete</string>
+    <string name="enter_id_edit">Enter ID Here</string>
+    <string name="display_info">Should show info if Display Info is pressed otherwise blank</string>
+</resources>

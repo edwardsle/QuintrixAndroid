@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/uid_edit"
+        android:digits="0123456789"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uid"
+        android:hint="@string/firstname_edit"
+        />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname"
+        android:hint="@string/lastname_edit"
+        />
+
+    <EditText
+        android:id="@+id/rewards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastname"
+        android:hint="@string/rewards_edit"
+        android:digits="0123456789"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_btn"
+        android:layout_below="@+id/rewards"
+        android:layout_marginTop="8dp"
+        android:onClick="addMember"
+        />
+
+    <Button
+        android:id="@+id/btn_display_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_add"
+        android:text="@string/display_info_btn"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:onClick="showMember"
+        />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_add"
+        android:text="@string/delete_btn"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="deleteMember"
+        />
+
+    <EditText
+        android:id="@+id/memberid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_display_info"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_id_edit"
+        android:digits="0123456789"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/display_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memberid"
+        android:text="@string/display_info"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>
